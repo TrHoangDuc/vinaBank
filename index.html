@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>VinaBank</title>
+  </head>
+  <body class="bg-secondary text-light">
+    <h1 class="text-center bg-green display-1">Bốc bát họ</h1>
+    <div class="wrapper d-flex justify-content-center">
+      <div class="form w-50 bg-primary p-3 rounded-2 my-5">
+        <div class="bank my-4">
+          <p>Thu nhập mỗi tháng:</p>
+          <input type="number" class="form-control" id="income" />
+        </div>
+        <div class="bank my-4">
+          <p>Số tiền cần vay:</p>
+          <input type="number" class="form-control" id="borrow" />
+        </div>
+        <div class="bank my-4">
+          <p>Lãi suất 1 năm (%):</p>
+          <input type="number" class="form-control" id="interest" />
+        </div>
+        <div class="bank my-4">
+          <p>Thời hạn vay (tháng):</p>
+          <input type="number" class="form-control" id="time" />
+        </div>
+        <button class="btn btn-success form-control w-100%" onclick="check()">
+          Check
+        </button>
+        <div class="alert alert-success my-3" role="alert" id="result"></div>
+        <button
+          class="btn btn-warning form-control w-100% mt-4"
+          onclick="reset()"
+        >
+          Reset
+        </button>
+        <div class="alert alert-success my-3" role="alert" id="inform"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
